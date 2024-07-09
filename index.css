@@ -13,6 +13,7 @@ body {
   background-image: url(1084d982de3eb117bf831a58beca3033.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 0.5;
 }
 
 #header {
