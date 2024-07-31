@@ -1,7 +1,7 @@
 import React from "react";
-
+import "./Same.css";
 function Second(props) {
-  return <div>두번째</div>;
+  return <div className="FirstPosition">두번 째</div>;
 }
 
 export default Second;

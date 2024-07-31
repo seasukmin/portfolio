@@ -7,7 +7,6 @@ function Home(props) {
   return (
     <Container>
       <Sub />
-      <Outlet />
     </Container>
   );
 }
