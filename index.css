@@ -153,12 +153,31 @@ a:hover {
   padding: 0 5% 0 5%;
   background-color: black;
   color: white;
+  opacity: 0.9;
+  padding: 10px;
 }
 .skill-nan {
   border: 1px solid black;
   padding: 10px 20px 10px 20px;
 }
+.skill-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #262a33;
+  padding: 10px 5px 5px 5px;
+  border-radius: 5px;
+}
 #middle {
+  color: white;
+  border-radius: 5px;
+  padding: 10px 5px 5px 5px;
+  background-color: ffccb6;
+  width: 10%;
+  text-align: center;
+  background-color: #326a7d;
+}
+#middle:hover {
   color: black;
 }
 .middle-pro {
@@ -166,4 +185,37 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  background-color: #a9c4d1;
+  opacity: 0.9;
+  border-radius: 5px;
+  margin: 0 15% 0 15%;
+  padding: 2%;
+}
+.pro-title {
+  text-align: center;
+  width: 10%;
+  border-radius: 5px;
+  background-color: #ffffb5;
+  padding: 10px;
+}
+.pro-summary {
+  text-align: center;
+  width: 32%;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  padding: 10px;
+}
+.footer {
+  display: flex;
+  color: white;
+  margin-top: 100px;
+  height: 200px;
+  background-color: black;
+  opacity: 0.9;
+  justify-content: center;
+  align-items: center;
+}
+.footer-content {
+  margin: 0 10px 10px 0;
 }
