@@ -10,17 +10,31 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
-
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 5% 0 10% 0;
+}
+#mainheadsec {
+  padding-top: 0;
+}
 h1 {
   display: flex;
   justify-content: center;
   font-size: 36px;
-  margin: 100px 0 100px 0;
+  margin: 0;
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
 .mainhead-head {
   position: absolute;
   left: 20px;
   color: white;
+}
+.mainhead-head:hover {
+  color: #ffffb5;
+  cursor: pointer;
 }
 .box {
   display: grid;
@@ -60,7 +74,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: black;
+  color: #ffffb5;
 }
 .headline {
   display: flex;
@@ -76,7 +90,7 @@ a:hover {
   margin: 20px;
 }
 .headline-nav:hover {
-  color: black;
+  color: #ffffb5;
 }
 .mainhead {
   display: flex;
@@ -117,7 +131,7 @@ a:hover {
   cursor: pointer;
 }
 .mainhead-bottom:hover {
-  color: black;
+  color: #ffffb5;
 }
 
 .intro {
@@ -138,8 +152,14 @@ a:hover {
 }
 
 .intro-img {
+  background-color: white;
   width: 60px;
   height: 60px;
+}
+.intro-img2 {
+  background-color: #fff4d4;
+  width: 30px;
+  height: 30px;
 }
 .intro-text {
   display: flex;
@@ -147,26 +167,61 @@ a:hover {
   width: 200px;
   gap: 10px;
 }
+
 .skill-box {
   display: flex;
   justify-content: space-evenly;
-  padding: 0 5% 0 5%;
-  background-color: black;
-  color: white;
+  background-color: #fff4d4;
+  border-radius: 10px;
+  color: black;
+  padding: 3%;
   opacity: 0.9;
-  padding: 10px;
+  margin: 0 10% 0 10%;
+  box-shadow: 2px 2px 2px 0px rgba(255, 255, 255, 0.5) inset,
+    7px 7px 20px 0px rgba(0, 0, 0, 1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.skills-box {
+  background-color: #fac71e;
+}
+.skillnan-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 .skill-nan {
-  border: 1px solid black;
-  padding: 10px 20px 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 5px 10px;
+  border-radius: 10px;
+  color: black;
+  font-size: 16px;
+  opacity: 0.9;
+}
+.nan1 {
+  background-color: #fac71e;
+}
+.nan2 {
+  background-color: #ffffb5;
+}
+.nan3 {
+  background-color: bisque;
+}
+.nan4 {
+  background-color: rgb(223, 59, 59);
+}
+.nan5 {
+  background-color: rgb(212, 120, 53);
 }
 .skill-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #262a33;
+  background-color: #fff4d4;
   padding: 10px 5px 5px 5px;
-  border-radius: 5px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-bottom: 1%;
 }
 #middle {
   color: white;
@@ -176,6 +231,8 @@ a:hover {
   width: 10%;
   text-align: center;
   background-color: #326a7d;
+  box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.1) inset,
+    2px 2px 10px 0px rgba(0, 0, 0, 1), 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
 }
 #middle:hover {
   color: black;
@@ -185,31 +242,38 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  background-color: #a9c4d1;
+  gap: 20px;
+  background-color: aliceblue;
   opacity: 0.9;
   border-radius: 5px;
   margin: 0 15% 0 15%;
   padding: 2%;
+  box-shadow: 2px 2px 2px 0px rgba(255, 255, 255, 0.1) inset,
+    7px 7px 20px 0px rgba(0, 0, 0, 1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
 }
 .pro-title {
   text-align: center;
-  width: 10%;
+  width: 20%;
   border-radius: 5px;
-  background-color: #ffffb5;
+  background-color: aliceblue;
   padding: 10px;
+  font-size: 24px;
+  box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.1) inset,
+    2px 2px 10px 0px rgba(0, 0, 0, 1), 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
 }
+
 .pro-summary {
   text-align: center;
-  width: 32%;
+  width: 50%;
   border-radius: 5px;
-  background-color: antiquewhite;
-  padding: 10px;
+  background-color: #b4d0da;
+  padding: 15px;
+  box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.1) inset,
+    2px 2px 10px 0px rgba(0, 0, 0, 1), 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
 }
 .footer {
   display: flex;
   color: white;
-  margin-top: 100px;
   height: 200px;
   background-color: black;
   opacity: 0.9;
@@ -218,4 +282,28 @@ a:hover {
 }
 .footer-content {
   margin: 0 10px 10px 0;
+}
+.middlepro {
+  background-color: #2f3136;
+}
+.lastpro {
+  background-color: #262a33;
+}
+.footerpro {
+  padding: 0;
+}
+#last-pro {
+  color: white;
+}
+#middle-pro {
+  color: white;
+}
+.middletitle {
+  background-color: rgb(223, 59, 59);
+}
+.lasttitle {
+  background-color: rgb(91, 161, 91);
+}
+.impor {
+  font-size: 18px;
 }

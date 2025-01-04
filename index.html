@@ -8,15 +8,15 @@
   </head>
   <style></style>
   <body>
-    <section>
+    <section id="mainheadsec">
       <div class="mainhead">
         <h2 class="mainhead-head">SSM`portfolio</h2>
         <div class="headline">
-          <div class="headline-nav" id="one">Intro</div>
-          <div class="headline-nav" id="two">Career</div>
-          <div class="headline-nav" id="three">Skill</div>
-          <div class="headline-nav" id="four">Result</div>
-          <div class="headline-nav" id="five">e-Mail</div>
+          <div class="headline-nav">about Me</div>
+          <div class="headline-nav">Skills</div>
+          <div class="headline-nav">Results</div>
+          <div class="headline-nav">middle</div>
+          <div class="headline-nav">last</div>
         </div>
         <div class="mainhead-summary">
           <div>안녕하세요 서석민입니다.</div>
@@ -85,33 +85,42 @@
         </div>
       </div>
     </section>
-    <section>
-      <h1>✔ Skills</h1>
+    <section class="skills-box">
+      <h1 id="skiils">✔ Skills</h1>
       <div class="skill-box">
         <div>
-          <div class="skill-title">Language</div>
-          <div>
-            <div class="skill-nan">JavaScript</div>
+          <div class="skill-title">
+            <img class="intro-img2" src="image/skill/language.png" />
+            &nbsp;Language
+          </div>
+          <div class="skillnan-box">
+            <div class="skill-nan nan1">JavaScript</div>
           </div>
         </div>
         <div>
-          <div class="skill-title">FrontEnd</div>
-          <div>
-            <div class="skill-nan">Css</div>
-            <div class="skill-nan">React</div>
-            <div class="skill-nan">Jason</div>
+          <div class="skill-title">
+            <img class="intro-img2" src="image/skill/frontend.png" />
+            &nbsp;FrontEnd
+          </div>
+          <div class="skillnan-box">
+            <div class="skill-nan nan2">Css</div>
+            <div class="skill-nan nan3">React</div>
+            <div class="skill-nan nan4">Jason</div>
           </div>
         </div>
         <div>
-          <div class="skill-title">BackEnd</div>
-          <div>
-            <div class="skill-nan">Firebase</div>
+          <div class="skill-title">
+            <img class="intro-img2" src="image/skill/dadabase.png" />
+            &nbsp;Database
+          </div>
+          <div class="skillnan-box">
+            <div class="skill-nan nan5">Firebase</div>
           </div>
         </div>
       </div>
     </section>
-    <section>
-      <h1>✔ Result</h1>
+    <section class="results-box">
+      <h1 id="results">✔ Results</h1>
       <div class="box">
         <div class="box-nan cl1">
           <a href="keyboard/fakekeyboard.html">Fake 키보드</a>
@@ -124,12 +133,13 @@
         <div class="box-nan cl5"><a href="mbti/mbticolor.html">MBTI</a></div>
       </div>
     </section>
-    <section>
-      <h1>✔ 중간 프로젝트</h1>
+    <section class="middlepro">
+      <h1 id="middle-pro">✔ 중간 프로젝트</h1>
       <div class="middle-pro">
-        <div class="pro-title">제목 : DateTeam</div>
+        <div class="pro-title middletitle">❤ DateTeam</div>
         <div class="pro-summary">
-          설명 : JavaScript를 사용해서 만든 맛집과 카페 그리고<br />
+          <span class="impor">JavaScript</span> 를 사용해서 만든 맛집과 카페
+          그리고<br />
           데이트 코스를 추천해주는 사이트
         </div>
         <a
@@ -139,12 +149,13 @@
         >
       </div>
     </section>
-    <section>
-      <h1>✔ 최종 프로젝트</h1>
+    <section class="lastpro">
+      <h1 id="last-pro">✔ 최종 프로젝트</h1>
       <div class="middle-pro">
-        <div class="pro-title">제목 : Ifarm</div>
+        <div class="pro-title lasttitle">🛺 I-farm</div>
         <div class="pro-summary">
-          설명 : react를 사용해서 만든 스마트팜 홈페이지와<br />
+          <span class="impor">React</span> 를 사용해서 만든 스마트팜
+          홈페이지와<br />
           대시보드 구성
         </div>
         <a
@@ -154,7 +165,7 @@
         >
       </div>
     </section>
-    <section>
+    <section class="footerpro">
       <div class="footer">
         <div class="footer-content">2025.</div>
         <div class="footer-content">Seo Suk Min.</div>
@@ -162,10 +173,5 @@
       </div>
     </section>
   </body>
-  <script>
-    const mainheadbottom = document.querySelector(".mainhead-bottom");
-    mainheadbottom.addEventListener("click", function () {
-      location.href = "#aboutme";
-    });
-  </script>
+  <script src="./index.js"></script>
 </html>
