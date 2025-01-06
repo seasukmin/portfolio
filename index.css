@@ -18,6 +18,7 @@ section {
 }
 #mainheadsec {
   padding-top: 0;
+  padding-bottom: 0;
 }
 h1 {
   display: flex;
@@ -39,7 +40,7 @@ h1 {
 .box {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 5px;
+  gap: 15px;
   padding: 0 5% 0 5%;
 }
 .box-nan {
@@ -51,7 +52,14 @@ h1 {
   font-size: 25px;
   font-weight: 1000;
   border-radius: 10px;
-  box-shadow: 5px 5px 4px 1px gray;
+  box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.1) inset,
+    2px 2px 10px 0px rgba(0, 0, 0, 1), 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
+}
+.box-nan a {
+  padding: 15px 15px 5px 15px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.1) inset,
+    2px 2px 10px 0px rgba(0, 0, 0, 1), 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
 }
 .cl1 {
   background-color: #262a33;
@@ -74,7 +82,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #ffffb5;
+  color: black;
 }
 .headline {
   display: flex;
@@ -197,6 +205,8 @@ a:hover {
   color: black;
   font-size: 16px;
   opacity: 0.9;
+  box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.1) inset,
+    2px 2px 10px 0px rgba(0, 0, 0, 1), 2px 2px 3px 0px rgba(0, 0, 0, 0.1);
 }
 .nan1 {
   background-color: #fac71e;
@@ -221,7 +231,7 @@ a:hover {
   padding: 10px 5px 5px 5px;
   border-radius: 10px;
   font-size: 18px;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
 #middle {
   color: white;
@@ -306,4 +316,46 @@ a:hover {
 }
 .impor {
   font-size: 18px;
+}
+.TopLoop {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 3px solid black;
+  transform: translateX(-50%);
+  position: fixed;
+  font-size: 20px;
+  left: 50%;
+  bottom: 50px;
+  width: 20px;
+  height: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+  backdrop-filter: blur(15px);
+}
+.TopLoop:hover {
+  background-color: black;
+}
+.Top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.TopLoop:active {
+  animation: pulse 0.3s;
+}
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 0 black;
+  }
+  to {
+    box-shadow: 0 0 0px 15px transparent;
+  }
 }

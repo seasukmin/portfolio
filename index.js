@@ -23,3 +23,7 @@ headlinenav.forEach((element, idx) => {
     }
   });
 });
+const topLoop = document.querySelector(".TopLoop");
+topLoop.addEventListener("click", function () {
+  location.href = "#mainhead-head";
+});
