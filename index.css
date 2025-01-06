@@ -223,6 +223,13 @@ a:hover {
 .nan5 {
   background-color: rgb(212, 120, 53);
 }
+.nan6 {
+  background-color: #6ea7ba;
+}
+.nan7 {
+  background-color: #6f7075;
+}
+
 .skill-title {
   display: flex;
   justify-content: center;
